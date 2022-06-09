@@ -1,0 +1,19 @@
+.loading_page-layout {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    background: var(--gradient-primary);
+    &>svg {
+        width: 60vw;
+    }
+    &>h2 {
+        color: white;
+        font-family: var(--font-title);
+        font-weight: 400;
+        font-size: 2rem;
+    }
+}
