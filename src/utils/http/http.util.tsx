@@ -66,7 +66,7 @@ class HttpUtil {
     }
 
     // @INFO Si el token no es valido hace logout
-    if (response?.data?.message?.includes('Unauthorized')) {
+    if (response?.data?.message?.includes('Acceso no permitido')) {
       // @ts-ignore
       this.storeObject.dispatch(AuthActions.logoutAction());
       window.location.reload();
